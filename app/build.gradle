@@ -52,7 +52,7 @@ android {
 //                    def fileName = "jenkins${defaultConfig.versionName}.apk"
 //                    output.outputFile = new File(outputFile.parent, fileName)
                     //可自定义自己想要生成的格式
-                    def channel = variant
+                    def channel = variant.applicationId
                     def fileName = "jenkins_${defaultConfig.versionName}_${channel}.apk"
                     output.outputFile = new File(outputFile.parent, fileName)
                 }
