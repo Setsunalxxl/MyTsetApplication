@@ -36,6 +36,7 @@ android {
                         def outputFile = output.outputFile
                         if (outputFile != null && outputFile.name.endsWith('.apk')) {
                             def fileName = "jenkins${defaultConfig.versionName}.apk"
+                            output.outputFile = new File(outputFile.parent, fileName)
                         }
                     }
                 }
