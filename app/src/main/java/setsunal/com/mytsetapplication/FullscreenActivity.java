@@ -63,6 +63,8 @@ public class FullscreenActivity extends AppCompatActivity {
                 actionBar.show();
             }
             mControlsView.setVisibility(View.VISIBLE);
+
+
         }
     };
     private boolean mVisible;
